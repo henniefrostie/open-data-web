@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/*===============================================================================
+                            H T M L / B O D Y
+===============================================================================*/
+html, body {
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Poppins', Arial, Helvetica, sans-serif;*/
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+
+
+/*===================================================================
+                                I M G
+===================================================================*/
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*=================================================================================
+                            T Y P O G R A P H Y
+=================================================================================*/
+h1, h2, h3, h4 {
+    margin: 0;
+    line-height: 2rem;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+p {
+    font-size: 1rem;
+}
+
+div, address, ul, ol, li, td {
+    margin: 0;
+    padding: 0;
+}
+

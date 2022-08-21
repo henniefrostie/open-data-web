@@ -1,0 +1,230 @@
+/*===============================================================
+                            M A I N
+===============================================================*/
+main{
+    padding: 5vh 7vw;
+    min-height: 80vh;
+}
+
+.columns-page {
+    display: flex;
+}
+
+.left-main {
+    width: 50%;
+    flex-flow: column nowrap;
+}
+
+.right-main {
+    width: 50%;
+    height: 75vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*===============================================================
+                            H E A D E R
+===============================================================*/
+header{
+    background-color: #fff;
+    padding: 2vh 2vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    color: black;
+}
+
+header h1, h2, h3{
+    color: black;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+#left-header{
+    align-self: flex-start;
+    width: 50%;
+}
+
+#right-header{
+    align-self: flex-end;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-content: flex-end;
+}
+
+#right-header button{
+    color: #000;
+    border: 0px;
+    border-radius: 0px;
+    padding: 9px 18px;
+    display: inline-block;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #D80286;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+#right-header button:hover {
+    box-shadow: inset 400px 0 0 0 #D80286;
+    color: #FFF;
+}
+
+.user{
+    width: 100%;
+    text-align: end;
+}
+
+
+
+
+/*===============================================================
+                            B U T T O N
+===============================================================*/
+main button, .submit-1 {
+    color: #000;
+    border: 0;
+    border-radius: 0px;
+    height: 10vh;
+    width: 20vw;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    font-size: .86rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #D80286;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+
+main button:hover, .submit-1:hover {
+    box-shadow: inset 400px 0 0 0 #D80286;
+    color: #fff;
+}
+  
+
+
+
+/*=================================================================================
+                            T E X T     S P E C I F I C
+=================================================================================*/
+/* S U B - T E X T */
+#sub-text{
+    font-style: italic;
+    font-size: .85rem;
+}
+
+a {
+    color: #D80286;
+}
+
+a:hover {
+    font-style: italic;
+}
+
+
+
+/*===============================================================
+                            F O R M S
+===============================================================*/
+form{
+    padding-bottom: 2vh;
+}
+
+label, input {
+    display: block;
+}
+
+/* L O G I N */
+.login-form form{
+    overflow: hidden;
+    background-color: white;
+    padding: 1vh 2vw 1vh 3vw;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 5px 10px 10px rgba(#000, 0.9);
+}
+
+.login-form input{
+    display: block;
+    font-size: 16px;
+    background: white;
+    width: 100%;
+    border: .1px gray solid;
+    padding: 10px 10px;
+    margin: 15px -10px;
+}
+
+.login-form input[type=text], input[type=password] {
+    border: none;
+    border-bottom: 2px solid #D80286;  
+}
+
+/* S E A R C H */
+#searchForm input, #searchForm label, #searchForm input[type=submit] {
+    display: inline;
+}
+
+.button-box {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* A P I   F O R M */
+.apiForm input[type=text]{
+    width: 40vw;
+}
+
+.apiForm input, .apiForm label, .apiForm input[type=submit], .apiForm-button {
+    display: inline;
+}
+
+.apiForm input[type=submit], #apiForm-button, #searchForm input[type=submit]{
+    width: 6vw;
+    height: 3.5vh;
+    font-size: .7rem;
+}
+
+
+
+/*=============================================================
+                            D A T A
+                    V I S U A L I S A T I O N
+=============================================================*/
+.data-canvas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+
+
+/*=======================================================
+                        M E D I A
+                      Q U E R I E S
+=======================================================*/
+@media screen and (max-width: 601px) {
+    .hide-on-mobile {
+        visibility: hidden;
+    }
+
+    .left-main {
+        width: 100%;
+    }
+  }
